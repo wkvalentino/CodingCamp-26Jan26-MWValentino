@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Valentino</title>
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+
+<body>
+    <header class="main-header p-[8px] flex justify-between items-center">
+        <!-- Logo -->
+        <div class="w-[100px] h-[100px] bg-green-500 flex justify-center items-center rounded-full bg-[url('https://i.pinimg.com/736x/df/7d/73/df7d73c62bd82efdaf5e732c1ed1c255.jpg')] bg-cover bg-center "></div>
+
+        <!-- Navigation Menu -->
+        <nav class="flex">
+            <a class="border rounded p-2" href="#home-page">Home</a>
+            <a class="border rounded p-2" href="#our-profile-page">Our Profile</a>
+            <a class="border rounded p-2" href="#portfolio-page">Portfolio</a>
+            <a class="border rounded p-2" href="#message-us-page">Message Us</a>
+        </nav>
+    </header>
+
+    <hr>
+
+    <main>
+        <!-- Home Page -->
+        <section id="home-page" class="min-h-[500px] text-center content-center bg-[url('img/perusahaan.jpg')] bg-cover bg-center">
+            <h2 class="text-5xl font-bold text-white font-bold text-outline" id="welcome-speech">Welcome to Our Website</h2>
+            <p class="mt-2 text-white text-lg text-outline">We are glad to have you here. Explore our services and offerings.</p>
+        </section>
+
+        <hr />
+
+     <section id="our-profile-page" class="min-h-[500px] text-center px-4">
+  <h2 class="text-xl font-bold ">About Valentino Company</h2>
+
+  <div class="w-full h-[200px] bg-[url('img/gedung.jpg')] bg-cover bg-center rounded-lg my-6"></div>
+
+  <p class="max-w-2xl mx-auto">
+    Valentino Company is dedicated to providing top-notch services in various domains.
+  </p>
+
+  <!-- Vision & Mission -->
+  <div class="mt-8">
+    <h3 class="text-lg font-bold">Vision & Mission</h3>
+    <p class="mt-2">
+      Our vision is to be a leading provider of exceptional services, while our mission is to deliver excellence in
+</section>
+
+<hr />
+
+
+      <section id="portfolio-page" class="min-h-[500px] text-center px-4">
+  <h2 class="text-xl font-bold">Our Portfolio</h2>
+  <p class="mt-2 mb-8">
+    Take a look at our diverse range of projects that showcase our skills and expertise.
+  </p>
+
+  <div class="grid md:grid-cols-3 sm:grid-cols-2 gap-6 max-w-6xl mx-auto">
+    
+    <!-- Card 1 -->
+    <div class="border rounded-lg overflow-hidden shadow-sm">
+      <div class="h-[180px] bg-[url('https://images.unsplash.com/photo-1691073121676-1ab3a6d3d743?q=80&w=1171&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')] bg-cover bg-center"></div>
+      <div class="p-4 text-left">
+        <h3 class="font-semibold">Company Website</h3>
+        <p class="text-sm mt-1">Corporate website design</p>
+        <span class="text-xs text-gray-500">HTML • CSS • JS</span>
+      </div>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="border rounded-lg overflow-hidden shadow-sm">
+      <div class="h-[180px] bg-[url('https://images.unsplash.com/photo-1767449441925-737379bc2c4d?q=80&w=1074&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')] bg-cover bg-center"></div>
+      <div class="p-4 text-left">
+        <h3 class="font-semibold">Mobile App UI</h3>
+        <p class="text-sm mt-1">User-friendly interface</p>
+        <span class="text-xs text-gray-500">UI/UX • Figma</span>
+      </div>
+    </div>
+
+    <!-- Card 3 -->
+    <div class="border rounded-lg overflow-hidden shadow-sm">
+      <div class="h-[180px] bg-[url('https://plus.unsplash.com/premium_photo-1681488262364-8aeb1b6aac56?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')] bg-cover bg-center"></div>
+      <div class="p-4 text-left">
+        <h3 class="font-semibold">E-Commerce Platform</h3>
+        <p class="text-sm mt-1">Online store solution</p>
+        <span class="text-xs text-gray-500">React • API</span>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+        <hr />
+
+        <!-- Message Us Page -->
+        <section id="message-us-page" class="min-h-[500px] mx-8">
+            <header>
+                <h2 class="text-xl font-bold">Message Us</h2>
+                <p class="mt-2">Have questions or want to work with us? Send us a message and we'll get back to you
+                    promptly.</p>
+            </header>
+
+            <form>
+            <div class="mb-4">
+            <label class="block mb-2" for="name">Name:</label>
+            <input class="w-full p-2 border rounded" type="text" id="name" name="name" required />
+            </div>
+            <div class="mb-4">
+            <label class="block mb-2" for="email">Email:</label>
+            <input class="w-full p-2 border rounded" type="email" id="email" name="email" required />
+            </div>
+            <div class="mb-4">
+            <label class="block mb-2" for="message">Message:</label>
+            <textarea class="w-full p-2 border rounded" id="message" name="message" rows="5" required></textarea>
+            </div>
+            <!-- Panggil function submitMessage() -->
+            <button class="px-4 py-2 bg-blue-500 text-white rounded" type="button" onclick="submitMessage()">
+            Send Message
+            </button>
+        </form>
+        <!-- Tempat hasil message -->
+            <div id="result" class="mt-6"></div>
+
+        </section>
+    </main>
+
+    <footer>
+        <div class="text-center p-4">
+            &copy; 2026 Valentino Company. All rights reserved.
+        </div>
+    </footer>
+
+    <!-- JavaScript External -->
+    <script src="js/script.js"></script>
+</body>
+
+</html>
